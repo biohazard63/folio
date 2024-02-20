@@ -22,11 +22,57 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-bottom: 10px;
 }
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
 
-.container {
+    .container {
   width: 80%;
   margin: auto;
   overflow: hidden;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    background-color: #000;
+}
+
+.fixed-menu button {
+    background-color: #ff9800;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.fixed-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.fixed-menu ul li {
+    padding: 10px 0;
+    cursor: pointer;
+
+}
+
+.fixed-menu ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /* Styles pour le composant Hero */
@@ -54,6 +100,7 @@ p {
   flex-direction: column;
   align-content: center;
   padding: 60px 0;
+    align-items: center;
 }
 
 .experience-item {
@@ -66,6 +113,7 @@ p {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   width: calc(50% - 10px);
+    align-items: center;
 }
 
 .experience-item:hover {
